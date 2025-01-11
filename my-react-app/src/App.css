@@ -1,0 +1,385 @@
+/* General Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f7f9fc; /* Default background color */
+  background-image: url('mainbg.jpg'); /* Path to your background image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #333;
+  line-height: 1.6;
+  font-size: 16px;
+  padding-top: 60px; /* Space for sticky navbar */
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo img {
+  height: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #00b4d8;
+}
+
+/* Main Content */
+.main-content {
+  margin-top: 80px;
+}
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #e6f7ff;
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* Slideshow Styles */
+.slideshow-container {
+  position: relative;
+  width: 80%; /* Set a maximum width */
+  max-width: 900px; /* Limit the maximum width */
+  margin: 0 auto; /* Center the slideshow */
+  height: 400px; /* Keep the height consistent */
+  overflow: hidden;
+  border: 2px solid #ddd; /* Optional: Add a border for better visual separation */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle shadow */
+}
+
+.slideshow-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slideshow-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prev-btn, .next-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  border-radius: 4px; /* Optional: Rounded button edges */
+}
+
+.prev-btn:hover, .next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  padding: 40px 20px;
+}
+
+.info .card {
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 45%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.info .card:hover {
+  transform: scale(1.05);
+}
+
+.info .card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.info .card p {
+  color: #555;
+}
+
+/* Video Section */
+.video-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+}
+
+.video-section h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.promo-video {
+  width: 100%;
+  height: auto;
+}
+
+/* News Section */
+.news {
+  padding: 20px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.news h2 {
+  font-size: 2em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.news-table {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+
+.news-column {
+  width: 30%;
+  background-color: white;
+  border: 1px solid #ddd;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.news-column:hover {
+  transform: scale(1.03);
+}
+
+.news-column a {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #333;
+}
+
+.news-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.news-column:hover .news-image {
+  transform: scale(1.05);
+}
+
+.news-column p {
+  padding: 10px 15px;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* Penang Description Section */
+.penang-description {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.penang-description h2 {
+  font-size: 2.5em;
+  color: #003366;
+  margin-bottom: 20px;
+}
+
+.penang-description p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.penang-description p:last-child {
+  margin-bottom: 0;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 40px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  border-top: 5px solid #00b4d8;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.footer-creators {
+  width: 30%;
+  text-align: left;
+  color: white;
+}
+
+.footer-creators h3 {
+  font-size: 1.5em;
+}
+
+.footer-creators p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-creators ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-creators ul li {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-about {
+  width: 30%;
+}
+
+.footer-about h3 {
+  color: white;
+}
+
+.footer-about p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-contact {
+  width: 30%;
+}
+
+.footer-contact p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-social .social-icons a {
+  color: #ffffff;
+  font-size: 24px;
+  transition: transform 0.3s ease;
+}
+
+.footer-social .social-icons a:hover {
+  transform: scale(1.1);
+  color: #00b4d8;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  color: #cccccc;
+  border-top: 1px solid #ffffff33;
+}
+
+.footer-bottom a {
+  color: #00b4d8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-social .social-icons {
+    justify-content: center;
+    align-items: center;
+  }
+}
