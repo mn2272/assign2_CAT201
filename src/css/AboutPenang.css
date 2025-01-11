@@ -1,0 +1,68 @@
+/* General Styling */
+.about-penang {
+  font-family: Arial, sans-serif;
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.about-penang h2 {
+  font-size: 36px;
+  color: #003366;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+/* Content Grid Layout */
+.about-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  align-items: start;
+}
+
+/* Individual Sections */
+.about-section {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-image {
+  width: 100%;
+  height: auto;
+  border-bottom: 5px solid #00b4d8;
+}
+
+.about-text {
+  padding: 20px;
+  text-align: left;
+}
+
+.about-text h3 {
+  font-size: 24px;
+  color: #003366;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444444;
+  margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text p {
+    font-size: 14px;
+  }
+}

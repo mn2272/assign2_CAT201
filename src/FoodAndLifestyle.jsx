@@ -1,5 +1,5 @@
 import React from 'react';
-import './FoodAndLifestyle.css';
+import './css/FoodAndLifestyle.css';
 
 const FoodAndLifestyle = () => {
   return (
@@ -19,7 +19,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
         <h3>Must-Try Foods in Penang</h3>
         <div className="food-grid">
           <div className="food-card">
-            <img src="char.jpg" alt="Char Kuey Teow" />
+            <img src="./css/image/char.jpg" alt="Char Kuey Teow" />
             <h4>Char Kuey Teow</h4>
             <p>
               A beloved Penang street food, this stir-fried flat noodle dish is made with prawns, eggs, 
@@ -27,7 +27,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
             </p>
           </div>
           <div className="food-card">
-            <img src="laksa.jpg" alt="Penang Laksa" />
+            <img src="./css/image/laksa.jpg" alt="Penang Laksa" />
             <h4>Penang Laksa</h4>
             <p>
               A tangy and spicy fish-based noodle soup garnished with cucumber, onions, and mint leaves. 
@@ -35,7 +35,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
             </p>
           </div>
           <div className="food-card">
-            <img src="nasi.jpg" alt="Nasi Kandar" />
+            <img src="./css/image/nasi.jpg" alt="Nasi Kandar" />
             <h4>Nasi Kandar</h4>
             <p>
               Steamed rice served with a variety of curries and side dishes, offering a flavorful and 
@@ -44,7 +44,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
           </div>
 
           <div className="food-card">
-            <img src="cendol.jpg" alt="Cendol" />
+            <img src="./css/image/cendol.jpg" alt="Cendol" />
             <h4>Cendol</h4>
             <p>
               A refreshing dessert made with shaved ice, green rice flour jelly, coconut milk, and palm 
@@ -52,7 +52,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
             </p>
           </div>
           <div className="food-card">
-            <img src="satay.jpg" alt="Satay" />
+            <img src="./css/image/satay.jpg" alt="Satay" />
             <h4>Satay</h4>
             <p>
               Skewered and grilled marinated meat, usually served with a delicious peanut sauce. Penang's 
@@ -60,7 +60,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
             </p>
           </div>
           <div className="food-card">
-            <img src="rojak.jpg" alt="Rojak" />
+            <img src="./css/image/rojak.jpg" alt="Rojak" />
             <h4>Rojak</h4>
             <p>
               A popular local salad made with fruits, vegetables, fried tofu, and topped with a spicy, 
@@ -69,7 +69,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
           </div>
 
           <div className="food-card">
-            <img src="mee.jpg" alt="Hokkien Mee" />
+            <img src="./css/image/mee.jpg" alt="Hokkien Mee" />
             <h4>Hokkien Mee</h4>
             <p>
               A hearty noodle soup made with prawns, pork, and a rich, flavorful broth. It's often topped 
@@ -77,7 +77,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
             </p>
           </div>
           <div className="food-card">
-            <img src="prawn.jpg" alt="Penang Prawn Noodles" />
+            <img src="./css/image/prawn.jpg" alt="Penang Prawn Noodles" />
             <h4>Penang Prawn Noodles</h4>
             <p>
               A beloved dish made with yellow noodles and rice vermicelli, served in a flavorful broth 
@@ -85,7 +85,7 @@ Penang’s food culture isn’t just about eating—it’s about experiencing th
             </p>
           </div>
           <div className="food-card">
-            <img src="sar.jpg" alt="Tau Sar Piah" />
+            <img src="./css/image/sar.jpg" alt="Tau Sar Piah" />
             <h4>Tau Sar Piah</h4>
             <p>
               A famous Penang pastry filled with mung bean paste, this snack is a sweet and savory delight 

@@ -1,16 +1,16 @@
 // Home.jsx
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import './css/App.css';
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const slides = [
-    'backgJAMBATAN2.jpg',
-    'nasikandar.jpg',
-    'penanghill.jpg',
-    'skybridge.jpg',
-    'payung.jpg',
+    './css/image/backgJAMBATAN2.jpg',
+    './css/image/nasikandar.jpg',
+    './css/image/penanghill.jpg',
+    './css/image/skybridge.jpg',
+    './css/image/payung.jpg',
   ];
 
   useEffect(() => {
@@ -36,7 +36,7 @@ const Home = () => {
       {/* Header */}
       <header className="header">
         <div className="logo">
-          <img src="logo2.jpg" alt="Logo" />
+          <img src="./css/image/logo2.jpg" alt="Logo" />
         </div>
         <nav className="navbar">
           <ul className="nav-tabs">
@@ -121,19 +121,19 @@ const Home = () => {
           <div className="news-table">
             <div className="news-column">
               <a href="https://www.traveloka.com/en-my/explore/destination/penang-best-place/308660" target="_blank" rel="noopener noreferrer">
-                <img src="news1.jpg" alt="News 1" className="news-image" />
+                <img src="./css/image/news1.jpg" alt="News 1" className="news-image" />
                 <p>Unforgettable Adventures Await: Explore the Top 17 Places in Penang</p>
               </a>
             </div>
             <div className="news-column">
               <a href="https://girleatworld.net/penang-food-guide/" target="_blank" rel="noopener noreferrer">
-                <img src="news2.jpg" alt="News 2" className="news-image" />
+                <img src="./css/image/news2.jpg" alt="News 2" className="news-image" />
                 <p>Penang Food Guide: Must Eat Food and Where to Find Them</p>
               </a>
             </div>
             <div className="news-column">
               <a href="https://infotourism.my/penangs-tourism-industry-poised-for-major-growth/" target="_blank" rel="noopener noreferrer">
-                <img src="new.jpg" alt="News 3" className="news-image" />
+                <img src="./css/image/new.jpg" alt="News 3" className="news-image" />
                 <p>Penang’s Tourism Industry Poised for Major Growth</p>
               </a>
             </div>
@@ -179,16 +179,16 @@ const Home = () => {
             <p><strong>Follow Us</strong></p>
             <div className="social-icons">
               <a href="#" target="_blank" aria-label="Facebook">
-                <img src="facebook.jpg" alt="Facebook" />
+                <img src="./css/image/facebook.jpg" alt="Facebook" />
               </a>
               <a href="#" target="_blank" aria-label="Twitter">
-                <img src="twitter.jpg" alt="Twitter" />
+                <img src="./css/image/twitter.jpg" alt="Twitter" />
               </a>
               <a href="#" target="_blank" aria-label="Instagram">
-                <img src="instagram.jpg" alt="Instagram" />
+                <img src="./css/image/instagram.jpg" alt="Instagram" />
               </a>
               <a href="#" target="_blank" aria-label="LinkedIn">
-                <img src="linkedin.jpg" alt="LinkedIn" />
+                <img src="./css/image/linkedin.jpg" alt="LinkedIn" />
               </a>
             </div>
           </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-import './AboutPenang.css';
+import './css/AboutPenang.css';
 
 const AboutPenang = () => {
   return (
@@ -9,7 +9,7 @@ const AboutPenang = () => {
         <div className="about-content">
           <div className="about-section">
             <img
-              src="masjid.jpg"
+              src="./css/image/masjid.jpg"
               alt="George Town cultural landmarks"
               className="about-image"
             />
@@ -29,7 +29,7 @@ const AboutPenang = () => {
 
           <div className="about-section">
             <img
-              src="penanghill.jpg"
+              src="./css/image/penanghill.jpg"
               alt="Penang Hill scenic view"
               className="about-image"
             />
@@ -49,7 +49,7 @@ const AboutPenang = () => {
 
           <div className="about-section">
             <img
-              src="char.jpg"
+              src="./css/image/char.jpg"
               alt="Penang famous street food"
               className="about-image"
             />
@@ -70,7 +70,7 @@ const AboutPenang = () => {
 
           <div className="about-section">
             <img
-              src="cny.jpg"
+              src="./css/image/cny.jpg"
               alt="Thaipusam festival in Penang"
               className="about-image"
             />
