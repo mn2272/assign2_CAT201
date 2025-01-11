@@ -2,6 +2,7 @@
   "name": "my-react-app",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://mn2272.github.io/assign2_CAT201",
   "type": "module",
   "scripts": {
     "dev": "vite",
