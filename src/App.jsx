@@ -16,9 +16,9 @@ const MainLayout = ({ children }) => (
       <nav className="navbar">
         <ul className="nav-tabs">
         <li><a href="/" className="tab-link">Main Page</a></li>
-          <li><a href="/tourist" className="tab-link">Tourist Spots</a></li>
+          <li><Link to="/tourist" className="tab-link">Tourist Spots</Link></li>
           <li><Link to="/food" className="tab-link">Food & Lifestyle</Link></li>
-          <li><a href="/hotel" className="tab-link">Hotel</a></li>
+          <li><Link to="/hotel" className="tab-link">Hotel</Link></li>
           <li><Link to="/about" className="tab-link">About Penang</Link></li>
         </ul>
       </nav>
